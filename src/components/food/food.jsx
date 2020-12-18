@@ -3,8 +3,8 @@ import {View,Text,Image} from '@tarojs/components'
 import {AtTabs, AtTabsPane} from 'taro-ui'
 import Cate from './cate'
 import FoodList from './foodList'
+import Introduce from '../introduce/introduce'
 import './food.less'
-import { func } from '../../../node_modules/@types/prop-types';
 class Food extends Component{
   constructor(){
     super(...arguments)
@@ -48,7 +48,9 @@ class Food extends Component{
             </View>
           </AtTabsPane>
           <AtTabsPane>评价</AtTabsPane>
-          <AtTabsPane>商家</AtTabsPane>
+          <AtTabsPane>
+            <Introduce/>
+          </AtTabsPane>
         </AtTabs>
       </View>
     )
