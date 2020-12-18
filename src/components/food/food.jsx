@@ -4,6 +4,7 @@ import {AtTabs, AtTabsPane} from 'taro-ui'
 import Cate from './cate'
 import FoodList from './foodList'
 import Introduce from '../introduce/introduce'
+import Evaluate from '../evaluate/evaluate'
 import './food.less'
 class Food extends Component{
   constructor(){
@@ -47,7 +48,9 @@ class Food extends Component{
               <FoodList selectCata={selectCata} currentList={currentList}/>
             </View>
           </AtTabsPane>
-          <AtTabsPane>评价</AtTabsPane>
+          <AtTabsPane>
+            <Evaluate/>
+          </AtTabsPane>
           <AtTabsPane>
             <Introduce/>
           </AtTabsPane>
